@@ -1,0 +1,65 @@
+
+.clearfix:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+#btn{
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    background: none;
+
+}
+
+#container {
+    width: 740px;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px 20px 50px 20px;
+}
+
+.red{
+    width: 80px;
+    height: 80px;
+    background: white;
+    float: left;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    transition: 20.0s;
+}
+
+.white{
+    width: 80px;
+    height: 80px;
+    background: white;
+    float: left;
+    margin-right: 2px;
+    margin-bottom: 2px;
+
+}
+
+.red:hover{
+    background-color: #d20a2c;
+    transition: 0s;
+}
+
+footer {
+    text-align: right;
+    padding-right: 60px;
+}
+
+@media (min-width: 600px) {
+
+    #btn{
+        width: 90%;
+        background: none;
+    }
+}
