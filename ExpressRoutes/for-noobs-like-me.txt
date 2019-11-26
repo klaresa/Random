@@ -1,0 +1,33 @@
+to run this:
+
+ - on its directory run: node src/index.js ;
+	Note: everytime you change index.js you must restart node unless you use tools like nodemon.
+
+ - on your browser enter: http://localhost:3333/plants or http://localhost:3333/plants/1 ;
+	Note: you can only excecute GET methods on your browser. To test other methods you'll need a way to send requests: try a REST client like postman or insomnia (my choice).
+
+ - on your test choice :
+
+	POST localhost:3333/plants
+		{
+		"id": "2", (or whichever id)
+		"details": [] 
+		}
+
+	POST localhost:3333/plants/2 (or whichever id)
+		{
+		"plant": "a new plant"	
+		}
+
+	POST localhost:3333/plants/1/details
+		{
+		"plant": "Cante", 
+		"quantity": "1"
+		}
+
+	PUT localhost:3333/plants/2 (or whichever id)
+		{
+		"plant": "edit that plant name"
+		}
+
+	DELETE localhost:3333/plants/2
